@@ -89,7 +89,7 @@ let paras = document.querySelectorAll ('p');
 for(let p of paras){
     p.style.color = 'blue';
 }
-foo.console.log("button works");
+foo = console.log("button works");
 
 let btn = document.querySelector('button');
 btn.addEventListener('click', foo);
