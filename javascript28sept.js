@@ -58,3 +58,39 @@ let thatNum = thisNum();
 console.log(thisNum);
 console.log(firstNum);
 console.log(thatNum);
+
+let person = () => {
+    let name = "Gareth";
+    return {
+        getName: function () {
+            return name;
+        },
+        setName: function (newName) {
+            name = newName;
+        },
+    };
+}
+
+let personA = person();
+console.log(personA.getName());
+personA.setName("Dwayne Johnson");
+console.log(personA.getName());
+
+let newPara = document.createElement("p");
+
+newPara.innerText = "The quick brown fox jumped over the lazy dog";
+
+document.body.appendChild(newPara);
+
+let firstDiv = document.querySelector('div');
+firstDiv.style.color = 'red';
+
+let paras = document.querySelectorAll ('p');
+for(let p of paras){
+    p.style.color = 'blue';
+}
+foo.console.log("button works");
+
+let btn = document.querySelector('button');
+btn.addEventListener('click', foo);
+
