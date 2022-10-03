@@ -37,3 +37,19 @@ fetch("https://reqres.in/api/users", {
 .then(response => response.json())
 .then(data => console.log(`Request succeeded with JSON response ${data.id}`))
 .catch(err => console.error(`${err}`));
+
+fetch("https://reqres.in/api/register", {
+    method: 'post',
+    headers: {
+        "Content-type": "application/json"
+    },
+    body: JSON.stringify(
+        {
+            "first_name": "Morpheus",
+            "job": "Leader"
+        }
+    )
+})
+.then(response => response.json())
+.then(data => console.log(`Request succeeded with JSON response ${data.id}`))
+.catch(err => console.error(`${err}`));
